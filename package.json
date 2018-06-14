@@ -1,0 +1,33 @@
+{
+  "name": "mui_react_router_ssr",
+  "version": "1.0.0",
+  "description": "Owned by Microsoft Bitchies Bonsoir !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Distil62/Material-UI-Server-Side-React-Router-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Distil62/Material-UI-Server-Side-React-Router-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Distil62/Material-UI-Server-Side-React-Router-boilerplate#readme",
+  "dependencies": {
+    "@material-ui/core": "^1.2.1",
+    "@material-ui/icons": "^1.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.12.0"
+  }
+}
