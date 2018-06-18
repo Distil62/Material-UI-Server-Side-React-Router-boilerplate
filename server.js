@@ -7,8 +7,15 @@ const app = express();
 
 const PORT = 8777;
 
+app.use(express.static('dist'));
+
 app.get('*', (req, res) => {
-    let html = ReactDomServer.renderToString(React.createElement(Main, {url : req.url, sender : 'server'}));
+    let html = ReactDomServer.renderToString(
+            React.createElement(
+                    Main, {
+                        url : req.url,
+                        sender : 'server'
+                    }));
     res.send(html);
 });
 

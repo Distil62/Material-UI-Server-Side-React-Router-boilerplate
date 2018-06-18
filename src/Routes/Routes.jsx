@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router';
 
-import Home from '../Components/Home/Home';
-import About from '../Components/About/About';
+import Home from '../Components/Home/Home.jsx';
+import About from '../Components/About/About.jsx';
 
-export default class componentName extends Component {
+export default class Routes extends Component {
 	render() {
 		return (
 			<div>

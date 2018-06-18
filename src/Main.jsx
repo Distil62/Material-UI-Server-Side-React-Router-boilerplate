@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StaticRouter, Router } from "react-router";
-import Routes from './Routes/Routes';
+import Routes from './Routes/Routes.jsx';
 
 export default class Main extends Component {
 	constructor(props) {
@@ -10,19 +10,6 @@ export default class Main extends Component {
 		}
 	}
 	
-	getRouter() {
-		if (this.props.sender === 'server') {
-			return <StaticRouter location={this.props.url} context={{}}>
-				<Routes />
-			</StaticRouter>
-		}
-		else {
-			return <Router>
-				<Routes />
-			</Router>
-		}
-	}
-
 	render() {
 		return (
 			<html lang="en">
@@ -36,8 +23,11 @@ export default class Main extends Component {
 			</head>
 			<body>
 				<div id="root">
-					{this.getRouter()}
+					<StaticRouter location={this.props.url} context={{}}>
+						<Routes />
+					</StaticRouter>
 				</div>
+				<script src="/bundle.js"></script>
 			</body>
 			</html>
 		)
