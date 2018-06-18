@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     mode : 'development',
@@ -17,5 +18,14 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    devServer : {
+        contentBase : path.join(__dirname, 'dist'),
+        filename : 'bundle.js',
+        hot : true
+    },
+    plugins : [
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin()
+    ]
 }
