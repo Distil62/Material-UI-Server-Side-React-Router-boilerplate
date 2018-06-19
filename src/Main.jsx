@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StaticRouter, Router } from "react-router";
 import Routes from './Routes/Routes.jsx';
-import Context from './Context/context';
+import { Provider } from './Context/context';
 
 
 export default class Main extends Component {
@@ -18,11 +18,11 @@ export default class Main extends Component {
 			</head>
 			<body>
 				<div id="root">
-					<Context.Provider>				
-							<StaticRouter location={this.props.url} context={{}}>
-								<Routes />
-							</StaticRouter>
-					</Context.Provider>
+					<Provider>				
+						<StaticRouter location={this.props.url} context={{}}>
+							<Routes />
+						</StaticRouter>
+					</Provider>
 				</div>
 				<script src="/bundle.js"></script>
 			</body>
