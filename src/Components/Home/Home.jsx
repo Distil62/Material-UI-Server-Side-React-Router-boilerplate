@@ -8,7 +8,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<Fragment>
-				<h1>La maison de f </h1>
+				<h1>What's your name ?</h1>
 				<globalContext.Consumer>
 					{data => (<TextField value={data.context.name} onChange={(e)=>{data.updateName(e)}} />)}
 				</globalContext.Consumer>

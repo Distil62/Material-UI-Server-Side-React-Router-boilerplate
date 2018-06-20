@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all" : "npm run start & npm run dev & npm run browser-sync",
+    "all": "npm run start & npm run dev & npm run browser-sync",
     "start": "./node_modules/.bin/babel-node server.js",
-    "webpack": "./node_modules/.bin/webpack --config ./webpack/webpack.dev.js",
+    "build": "npm run start & npm run webpack",
+    "webpack": "./node_modules/.bin/webpack --config ./webpack/webpack.prod.js",
     "dev": "./node_modules/.bin/webpack --config ./webpack/webpack.dev.js --hot --watch --progress --color",
-    "browser-sync" : "./node_modules/.bin/browser-sync start --proxy 'http://localhost:4555' --files 'dist'",
+    "browser-sync": "./node_modules/.bin/browser-sync start --proxy 'http://localhost:4555' --files 'dist'",
     "purge": "rm ./dist/*"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "react-dom": "^16.4.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "uglifyjs-webpack-plugin": "^1.2.6",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.6"
   },
