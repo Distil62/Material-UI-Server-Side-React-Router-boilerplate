@@ -22,6 +22,7 @@ module.exports = {
     devServer : {
         contentBase : path.join(__dirname, 'dist'),
         filename : 'bundle.js',
+        port : 3000,
         hot : true
     },
     plugins : [

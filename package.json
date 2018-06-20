@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "all" : "npm run start & npm run dev & npm run browser-sync",
     "start": "./node_modules/.bin/babel-node server.js",
-    "webpack": "./node_modules/.bin/webpack --config ./webpack/dev.config.js",
-    "dev": "./node_modules/.bin/webpack --config ./webpack/dev.config.js --hot --watch",
+    "webpack": "./node_modules/.bin/webpack --config ./webpack/webpack.dev.js",
+    "dev": "./node_modules/.bin/webpack --config ./webpack/webpack.dev.js --hot --watch --progress --color",
+    "browser-sync" : "./node_modules/.bin/browser-sync start --proxy 'http://localhost:4555' --files 'dist'",
     "purge": "rm ./dist/*"
   },
   "repository": {
@@ -35,6 +37,8 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "browser-sync": "^2.24.4"
   }
 }

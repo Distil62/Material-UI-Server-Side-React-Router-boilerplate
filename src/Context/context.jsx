@@ -18,15 +18,14 @@ export class Provider extends Component {
     }
 
     render() {
-        console.log(this.state);
-    return (
-        <globalContext.Provider value={{
-            context: this.state,
-            updateName: (e) => {this.updateName(e)}
-        }}>
-            {this.props.children}
-        </globalContext.Provider>
-    )
+        return (
+            <globalContext.Provider value={{
+                context: this.state,
+                updateName: (e) => {this.updateName(e)}
+            }}>
+                {this.props.children}
+            </globalContext.Provider>
+        )
   }
 }
 

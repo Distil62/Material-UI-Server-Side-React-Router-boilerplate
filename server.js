@@ -5,7 +5,7 @@ import ReactDomServer from 'react-dom/server'
 import Main from './src/Main';
 const app = express();
 
-const PORT = 8777;
+const PORT = 4555;
 
 app.use(express.static('dist'));
 
