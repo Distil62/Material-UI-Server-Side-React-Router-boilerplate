@@ -12,11 +12,12 @@ export default class Main extends Component {
 				<meta charSet="UTF-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
+				<link rel="stylesheet" href="bundle.css" />
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 				<title>Document</title>
 			</head>
-			<body>
+			<body style={{margin: '0px', overflowX: 'hidden'}}>
 				<div id="root">
 					<Provider>				
 						<StaticRouter location={this.props.url} context={{}}>
@@ -24,7 +25,7 @@ export default class Main extends Component {
 						</StaticRouter>
 					</Provider>
 				</div>
-				<script src="/bundle.js"></script>
+				<script src='bundle.js'></script>
 			</body>
 			</html>
 		)

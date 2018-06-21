@@ -5,9 +5,10 @@ import ReactDomServer from 'react-dom/server'
 import Main from './src/Main';
 const app = express();
 
-const PORT = 4555;
+const PORT = 6777;
 
 app.use(express.static('dist'));
+app.set('view engine', 'jsx');
 
 app.get('*', (req, res) => {
     let html = ReactDomServer.renderToString(

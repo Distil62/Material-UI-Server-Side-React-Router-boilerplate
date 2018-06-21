@@ -1,0 +1,75 @@
+.homecard-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    min-width: 312px;
+    width: 95%;
+    height: 384px;
+    position: relative;
+    bottom: 32px;
+    right: 32px;
+    animation-duration: 6s;
+    animation-name: fly-card;
+    animation-iteration-count: infinite;
+}
+
+.homecard-bg-back {
+    margin-top: 64px;
+}
+
+.homecard-btn {
+    color: white !important;
+    padding: 16px 34px;
+    position: relative;
+    left: 24px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px, rgba(0, 0, 0, 0.14) 0px 10px 14px 1px, rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
+    transform: rotate(2deg);
+    animation-duration: 6s;
+    animation-name: fly-btn;
+    animation-iteration-count: infinite;
+    transition: all ease-in-out 0.2s !important;
+}
+
+.homecard-btn:hover {
+    transform: rotate(0deg);
+    text-shadow: 0px 0px black;
+}
+
+@keyframes fly-card {
+    from {
+        bottom: 32px;
+        
+    }
+
+    25% {
+        bottom: 30px;
+    }
+
+    75% {
+        bottom: 34px;
+    }
+
+    to {
+        bottom: 32px;
+    }
+}
+
+@keyframes fly-btn {
+    from {
+        top: 24px;
+        
+    }
+
+    25% {
+        top: 26px;
+    }
+
+    75% {
+        top: 20px;
+    }
+
+    to {
+        top: 24px;
+    }
+}
