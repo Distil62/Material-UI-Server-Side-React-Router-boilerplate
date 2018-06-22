@@ -11,7 +11,7 @@
     "webpack": "./node_modules/.bin/webpack-cli --config ./webpack/webpack.prod.js",
     "webpackDev": "./node_modules/.bin/webpack-cli --config ./webpack/webpack.dev.js --hot --watch --progress",
     "browser-sync": "./node_modules/.bin/browser-sync start --proxy 'http://localhost:6777' --files 'dist'",
-    "sass": "./node_modules/.bin/sass --watch ./src/Components/**/*.scss ./dist/bundle.css",
+    "sass": "./node_modules/.bin/sass --watch ./src/style.scss ./dist/bundle.css",
     "purge": "rm ./dist/*"
   },
   "repository": {
