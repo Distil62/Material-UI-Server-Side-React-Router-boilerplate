@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AllBlogs from './BlogProvider/allBlog.js';
 
 export const globalContext = React.createContext();
 
@@ -7,25 +8,16 @@ export class Provider extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name : 'Charle'
-        };
-    }
-  
-    updateName(e) {
-        this.setState({
-            name: e.target.value
-        });
+            blogs: AllBlogs
+        }
     }
 
     render() {
         return (
-            <globalContext.Provider value={{
-                context: this.state,
-                updateName: (e) => {this.updateName(e)}
-            }}>
+            <globalContext.Provider value={this.state}>
                 {this.props.children}
             </globalContext.Provider>
         )
-  }
+    }
 }
 

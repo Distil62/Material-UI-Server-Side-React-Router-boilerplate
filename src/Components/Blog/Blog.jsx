@@ -3,7 +3,9 @@ import TopPage from '../TopPage/TopPage.jsx';
 import { Grid } from '@material-ui/core';
 import Grey from '@material-ui/core/colors/grey';
 import Yellow from '@material-ui/core/colors/yellow';
-import HomeCard from '../HomeCard/HomeCard.jsx';
+import BlogCard from '../BlogCard/BlogCard.jsx';
+import { globalContext } from '../../Context/context.jsx';
+
 
 
 export class Blog extends Component {
@@ -16,7 +18,7 @@ export class Blog extends Component {
             root
         }
     }
-  
+
     render() {
     return (
       <Fragment>
@@ -26,9 +28,14 @@ export class Blog extends Component {
         <div className='blog-content' style={this.state.root}>
             <Grid container justify='center'>
                 <Grid item xs={11}>
-                    <HomeCard   img='https://cdna.artstation.com/p/assets/images/images/010/307/676/large/louis-charavner-flatspace.jpg?1523730134'
+                    <globalContext.Consumer>
+                        {
+                            data => Object.keys(data.blogs).map((elem) => <BlogCard key={elem} 
+                                data={data.blogs[elem]}
                                 btnColor={Yellow['500']}
-                                btnContent='Ticket1' />
+                            />)
+                        }
+                    </globalContext.Consumer>
                 </Grid>
             </Grid>
         </div>
@@ -36,5 +43,5 @@ export class Blog extends Component {
     )
   }
 }
-
+//TODO Need to generate list of blogCard
 export default Blog;

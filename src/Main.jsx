@@ -15,6 +15,8 @@ export default class Main extends Component {
 				<link rel="stylesheet" href="bundle.css" />
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+				<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" /> 
+				<link rel='stylesheet' href='styles/monokai-sublime.css' />
 				<title>Document</title>
 			</head>
 			<body style={{margin: '0px', overflowX: 'hidden'}}>

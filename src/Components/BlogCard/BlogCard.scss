@@ -1,0 +1,19 @@
+.blogcard-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    min-width: 312px;
+    width: 95%;
+    height: 384px;
+    position: relative;
+    bottom: 12px;
+    right: 12px;
+    animation-duration: 6s;
+    animation-name: fly-card;
+    animation-iteration-count: infinite;
+}
+
+.text-margin {
+    margin-top : 28px;
+}

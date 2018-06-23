@@ -28,15 +28,15 @@ export default class Home extends Component {
 					<Grid spacing={40} container justify='center'>
 						<Grid item xs={12} md={10}>
 							<Grid container justify='center'>
-								<Grid item xs={10} md={4}>
+								<Grid item xs={10} md={5}>
 									<HomeCard img="https://cdna.artstation.com/p/assets/images/images/011/407/980/large/alfonso-salazar-alfonso-salazar-surfer.jpg?1529431365"
 												btnColor={Grey['800']}
 												btnContent='Projets'
 												disabled={true}/>
 								</Grid>
-								<Grid item xs={false} md={4}>
+								<Grid item xs={false} md={2}>
 								</Grid>
-								<Grid item xs={10} md={4}>
+								<Grid item xs={10} md={5}>
 									<HomeCard img="https://cdnb.artstation.com/p/assets/images/images/010/834/965/large/sylvain-sarrailh-lostremains.jpg?1526477317"
 												btnColor={Grey['800']}
 												btnContent='CV'
@@ -46,8 +46,8 @@ export default class Home extends Component {
 						</Grid>
 						<Grid item xs={12} md={10}>
 							<Grid container justify='center'>
-								<Grid item xs={10} md={4}>
-									<HomeCard 	img="https://cdna.artstation.com/p/assets/images/images/011/386/330/large/rutger-van-de-steeg-eclipse-3.jpg?1529338625"
+								<Grid item xs={10} md={5}>
+									<HomeCard 	img="https://cdn.discordapp.com/attachments/266953688801738752/459500282032685080/branden-harvey-362111-unsplash.jpg"
 												btnColor={Red['500']}
 												btnContent='Blog'
 												to='/blog'/>

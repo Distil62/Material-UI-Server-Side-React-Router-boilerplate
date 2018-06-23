@@ -8,6 +8,7 @@ const app = express();
 const PORT = 6777;
 
 app.use(express.static('dist'));
+app.use(express.static('node_modules/highlight.js/'));
 app.set('view engine', 'jsx');
 
 app.get('*', (req, res) => {

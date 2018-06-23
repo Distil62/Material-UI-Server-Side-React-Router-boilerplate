@@ -17,12 +17,4 @@ export default class Client extends Component {
 	}
 }
 
-if (module.hot) {
-	module.hot.accept(() => {
-		console.log('Page reloaded.');
-		ReactDom.render(<Client />, document.getElementById('root'));
-		document.getElementById('root').innerHTML = "";	
-	});
-}
-
 ReactDom.render(<Client />, document.getElementById('root'));

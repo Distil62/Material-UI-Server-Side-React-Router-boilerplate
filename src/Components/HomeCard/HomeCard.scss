@@ -1,4 +1,11 @@
+.floating-bg {
+    animation-duration: 6s;
+    animation-name: fly-card;
+    animation-iteration-count: infinite;
+}
+
 .homecard-bg {
+    @extend .floating-bg;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -9,9 +16,7 @@
     position: relative;
     bottom: 32px;
     right: 32px;
-    animation-duration: 6s;
-    animation-name: fly-card;
-    animation-iteration-count: infinite;
+
 }
 
 .homecard-bg-back {
@@ -33,7 +38,7 @@
 
 .homecard-btn:hover {
     transform: rotate(0deg);
-    text-shadow: 0px 0px black;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.37);
 }
 
 @keyframes fly-card {

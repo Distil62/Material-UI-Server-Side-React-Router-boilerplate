@@ -3,6 +3,12 @@ import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 
+/**
+ * 
+ * @param img Url of img
+ * @param color Color #0000
+ * @param title Title of page
+ */
 export default class TopPage extends Component {
 	constructor(props) {
 		super(props);
