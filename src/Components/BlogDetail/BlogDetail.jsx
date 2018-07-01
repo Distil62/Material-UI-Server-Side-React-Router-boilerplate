@@ -6,6 +6,10 @@ import { globalContext } from '../../Context/context.jsx';
 import Grey from '@material-ui/core/colors/grey';
 import { highlightBlock } from 'highlight.js';
 
+function is_server() {
+	return ! (typeof window != 'undefined' && window.document);
+ }
+
 export class BlogDetail extends Component {
 	
 	constructor(props) {
@@ -20,14 +24,13 @@ export class BlogDetail extends Component {
 		};
 	}
 
-	componentWillMount() {
-		document.title = document.title + ' - ' + this.props.match.params.title;
-	}
-
     componentDidMount() {
-		document.querySelectorAll('code').forEach(elem => {
-			highlightBlock(elem);
-		});
+		if (!is_server) {
+			document.querySelectorAll('code').forEach(elem => {
+				highlightBlock(elem);
+			});
+			document.title = document.title + ' - ' + this.props.match.params.title;
+		}
     }
 
 	render() {

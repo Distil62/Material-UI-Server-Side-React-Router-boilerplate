@@ -5,7 +5,7 @@ import ReactDomServer from 'react-dom/server'
 import Main from './src/Main';
 const app = express();
 
-const PORT = 6777;
+const PORT = 6779;
 
 app.use(express.static('dist'));
 app.use(express.static('node_modules/highlight.js/'));

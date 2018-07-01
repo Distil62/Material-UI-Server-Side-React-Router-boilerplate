@@ -13,6 +13,7 @@ export class Provider extends Component {
     }
 
     render() {
+        this.state = Object.assign(this.state, {sender : this.props.sender});
         return (
             <globalContext.Provider value={this.state}>
                 {this.props.children}
