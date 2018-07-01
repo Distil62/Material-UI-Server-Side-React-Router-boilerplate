@@ -1,30 +1,40 @@
 import remark from 'remark';
 import rreact from 'remark-react';
 
-
-
 const md = `
-# Titre 1
+Bienvenue sur  mon blog personnel ! Prenez une place et du pop-corn ici est le repère de tous les geeks, tous les nerd fan de i3w et de tous les barbus dont le coverage depasse les 9000% !
+
 ---
-Pariatur molestias dolor ipsam corporis officia sequi porro eius. Voluptas pariatur deserunt corrupti magnam ut. Tenetur unde odio ea. Doloremque voluptatem quia aut mollitia. Minus ipsum qui laborum sit est quia tempore. Sunt quisquam neque rerum quis.
-Facilis nostrum distinctio et sint rerum possimus minus vitae. Magni ut eum molestias. Dolor ea illum ratione ut. Aliquam est aut alias accusamus perferendis non adipisci. Est sed vel itaque.
 
-# Titre 2
-    
-## Titre 2.1
-Mollitia tempora tenetur sit saepe labore voluptatem. Magnam rerum quibusdam quia non expedita. Iure mollitia distinctio officia maiores voluptatibus iure quia incidunt. Beatae error dolorem numquam eveniet.
+![Welcome](https://cdn.discordapp.com/attachments/266953688801738752/461471370426056714/rawpixel-617391-unsplash.jpg)
 
-## Titre 2.2
-Explicabo veniam est excepturi nostrum dolores. Et facilis sunt sed quaerat aut iure consequatur. Suscipit expedita facere temporibus repudiandae similique rerum repellat. Earum voluptatibus est cupiditate rem veritatis.
+---
 
-![cover img](https://cdnb.artstation.com/p/assets/images/images/011/430/137/large/zhiqian-liu-sketch25.jpg?1529533587 "Sample of my Work")
+## Qui suis-je ?
+Je suis étudiant en programmation au campus Ynov Lyon. Passionne par les technologies émergentes (aka : Programmation Quantique, Réalité mixte, IA Google Duplex...)
+Et la bière bien fraiche !
+
+## Pourquoi ce blog ?
+À la base ce blog a été fait dans le cadre de mes études aux campus de Ynov Lyon pour raconter comment ce déroule mon stage.
+Ca sera d'ailleurs le premier sujet aborde dans ma première série de tickets de blog.
+Mais je compte l'étendre a divers sujets lié à la programmation et il servira de support écrit à divers projets de programmations.
+
+## Tes projets actuel ?
+Je suis entrain de me lancer dans le développement freelance en parallèle de mes études.
+Dans le cadre d'un projet hébergé  par l'école nous allons une petite équipe et moi-même concevoir une plateforme de référencement de foodtrucks.
+Je suis membre d'un groupe Meetup le [Microsoft User Group](https://www.meetup.com/fr-FR/MUGLyon/) venez nous voir sur Lyon !.
+Et je travaille comme développeur junior pour la société Nept-in.
+
+## Kinder bueno ou chocotube ?
+Chocotube bien-évidemment.
+
+
+Merci d'avoir lu ce ticket jusqu'au bout la prochaine série de ticket portera sur mon stage chez Nept-in.
 
 `;
 
 const shortContent = `
-Bonjour je suis un contenu court.
-Je sers a resume ce que vous allez voir dans ce ticket de blog.
-En espereant que vous effecturez une agreable lecture.
+Hello, world ! Venez lire mon premier ticket qui presente ce magnifique blog de developpeur !
 `
 
 const content = remark().use(rreact).processSync(md);

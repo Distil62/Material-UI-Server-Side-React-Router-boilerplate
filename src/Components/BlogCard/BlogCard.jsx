@@ -48,9 +48,9 @@ export default class HomeCard extends Component {
 						</Grid>
 						<Grid container justify='flex-end'>
 							<Grid item>
-								<Link to={'/blog/' + this.props.data.title}>
+								<Link to={'/blog/' + this.props.data.canonical + '/' + this.props.data.canonical}>
 									<Button className='homecard-btn' variant='contained' size='large' style={this.state.root.btn} disabled={this.props.disabled}>
-										{this.props.data.title}
+										{this.props.data.canonical}
 									</Button>
 								</Link>
 							</Grid>

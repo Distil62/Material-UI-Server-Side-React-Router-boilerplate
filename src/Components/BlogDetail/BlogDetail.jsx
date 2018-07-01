@@ -20,36 +20,36 @@ export class BlogDetail extends Component {
 		};
 	}
 
+	componentWillMount() {
+		document.title = document.title + ' - ' + this.props.match.params.title;
+	}
+
     componentDidMount() {
 		document.querySelectorAll('code').forEach(elem => {
 			highlightBlock(elem);
-		})
-
-		document.querySelectorAll('img').forEach(elem => {
-			elem
-		})
+		});
     }
 
 	render() {
-		const title = this.props.match.params.title;
+		const url = this.props.match.params.title;
 		return (
 			<div>
 				<globalContext.Consumer>
 					{
 						data => <div> 
-						<TopPage img={data.blogs[title].img}
-								title={title} />
+						<TopPage img={data.blogs[url].img}
+								title={data.blogs[url].title} />
 							<Grid style={this.state.root} container justify='center'>
 								<Grid item xs={11} md={10}>
 									<Paper elevation={24}>
 										<Grid container justify='center'>
 											<Grid item xs={10}>
 												<div className='md'>
-													{data.blogs[title].content.contents}
+													{data.blogs[url].content.contents}
 												</div>
 												<Divider />
 												<Typography variant="caption" gutterBottom align='right'>
-													{'Par ' + data.blogs[title].author + ', le ' + new Date(data.blogs[title].date).toDateString()}
+													{'Par ' + data.blogs[url].author + ', le ' + new Date(data.blogs[url].date).toDateString()}
 												</Typography>
 											</Grid>
 										</Grid>

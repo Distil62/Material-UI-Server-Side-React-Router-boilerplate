@@ -22,14 +22,14 @@ export default class Home extends Component {
 		return (
 			<Fragment>
 				<TopPage 
-					img="https://cdna.artstation.com/p/assets/images/images/010/557/912/large/soufiane-idrassi-cyberpunk-valkyries-copy.jpg?1525074029"
+					img="https://cdn.discordapp.com/attachments/266953688801738752/460181273634406400/fabian-grohs-616504-unsplash.jpg"
 					title="Welcome"/>
 				<div style={this.state.root}>
 					<Grid spacing={40} container justify='center'>
 						<Grid item xs={12} md={10}>
 							<Grid container justify='center'>
 								<Grid item xs={10} md={5}>
-									<HomeCard img="https://cdna.artstation.com/p/assets/images/images/011/407/980/large/alfonso-salazar-alfonso-salazar-surfer.jpg?1529431365"
+									<HomeCard img="https://cdn.discordapp.com/attachments/266953688801738752/460181690380451840/pawel-nolbert-291146-unsplash.jpg"
 												btnColor={Grey['800']}
 												btnContent='Projets'
 												disabled={true}/>
@@ -37,7 +37,7 @@ export default class Home extends Component {
 								<Grid item xs={false} md={2}>
 								</Grid>
 								<Grid item xs={10} md={5}>
-									<HomeCard img="https://cdnb.artstation.com/p/assets/images/images/010/834/965/large/sylvain-sarrailh-lostremains.jpg?1526477317"
+									<HomeCard img="https://cdn.discordapp.com/attachments/266953688801738752/460182541144424459/daniel-cheung-129839-unsplash.jpg"
 												btnColor={Grey['800']}
 												btnContent='CV'
 												disabled={true}/>

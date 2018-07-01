@@ -30,7 +30,7 @@ export class Blog extends Component {
                 <Grid item xs={11}>
                     <globalContext.Consumer>
                         {
-                            data => Object.keys(data.blogs).map((elem) => <BlogCard key={elem} 
+                            data => Object.keys(data.blogs).map(elem => <BlogCard key={elem} 
                                 data={data.blogs[elem]}
                                 btnColor={Yellow['500']}
                             />)
@@ -43,5 +43,5 @@ export class Blog extends Component {
     )
   }
 }
-//TODO Need to generate list of blogCard
+
 export default Blog;

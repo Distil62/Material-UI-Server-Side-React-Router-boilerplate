@@ -17,7 +17,7 @@ export default class Main extends Component {
 				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 				<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" /> 
 				<link rel='stylesheet' href='styles/monokai-sublime.css' />
-				<title>Document</title>
+				<title>Louis Charavner</title>
 			</head>
 			<body style={{margin: '0px', overflowX: 'hidden'}}>
 				<div id="root">

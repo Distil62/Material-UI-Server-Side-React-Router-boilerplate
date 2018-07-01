@@ -19,7 +19,7 @@ export default class Routes extends Component {
 				<globalContext.Consumer>
 					{
 						data => Object.keys(data.blogs).map((elem) => <Route key={elem}
-						path='/blog/:title' component={BlogDetail} />)
+						path={'/blog/' + elem +'/:title'} component={BlogDetail} />)
 					}
 				</globalContext.Consumer>
 			</Fragment>
